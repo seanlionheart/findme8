@@ -1,0 +1,72 @@
+{% load static %}
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Find Me 8</title>
+<link rel="stylesheet" href="{% get_static_prefix %}css/main.css" type="text/css" media="screen"/>
+</head>
+<body>
+<div id="head">
+	<div id="head-box">
+		<a href="javascript:;" class="yellow-link" id="register">注册</a>
+		<span class="bg" id="split_1">&nbsp;</span>
+		<a href="javascript:;" class="yellow-link" id="login">登陆</a>
+		<div id="nav">
+			<a href="javascript:;" class="yellow-link">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="javascript:;" class="yellow-link">关于我们</a>
+		</div>
+	</div>
+</div>
+<div id="while-line"></div>
+<div id="title">
+	<div id="logo"></div>
+</div>
+<div id="main">
+	<div id="show-box">
+		<div id="gallery-box">
+			<div id="gallery">
+				<img class="gallery-img" src="{% get_static_prefix %}image/iphone.png"/>
+			</div>
+		</div>
+		<div id="detail">
+			<h1>find <span style="font-weight: normal;">me</span></h1>
+			<p id="detail_1">
+				只要你还在地球上，丢了的，我就能把你找回来！<br/>
+				快给你的&nbsp;<strong>Apple</strong>&nbsp;和&nbsp;<strong>Android</strong>&nbsp;装上&nbsp;<strong>findMe</strong>&nbsp;吧！
+			</p>
+			<h3>免费下载地址</h3>
+			<a href="javascript:;" class="bg blue-btn" id="apple-client">apple客户端下载</a>
+			<a href="javascript:;" class="bg blue-btn" id="android-client">android客户端下载</a>
+		</div>
+	</div>
+	<div id="content">
+		
+	</div>
+</div>
+<div id="footer">
+版权所有&nbsp;&copy;&nbsp;2011 findme8.com 保留所有权利
+</div>
+<div class="bottom-line"></div>
+<div class="pop">
+	<div>
+		
+	</div>
+</div>
+<script src="{% get_static_prefix %}js/jquery-1.6.4.min.js"></script>
+<script>
+$(function() {
+	$('.blue-btn').mousedown(function() {
+		$(this).addClass('blue-btn-press');
+	}).mouseup(function() {
+		$(this).removeClass('blue-btn-press');
+	}).mouseleave(function() {
+		$(this).removeClass('blue-btn-hover').removeClass('blue-btn-press');
+	}).mouseover(function() {
+		$(this).addClass('blue-btn-hover');
+	});
+});
+</script>
+</body>
+</html>
