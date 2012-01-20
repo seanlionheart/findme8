@@ -7,7 +7,6 @@ admin.autodiscover()
 
 
 urlpatterns = patterns('',
-    # Examples:
     # url(r'^$', 'findme8web.views.home', name='home'),
     # url(r'^findme8web/', include('findme8web.foo.urls')),
 
